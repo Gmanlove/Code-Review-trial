@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>freeCodeCamp Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h2 id="title">freeCodeCamp Survey Form</h2>
+    <p class="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+
+    <div class="form-div">
+      <form id="survey-form">
+        <label id="name-label" for="name">Name</label><br />
+        <input
+          id="name"
+          type="text"
+          name="name"
+          required
+          placeholder="enter name"
+        /><br />
+
+        <label id="email-label" for="email">Email</label><br />
+        <input
+          id="email"
+          type="email"
+          name="email"
+          placeholder="enter email"
+          required
+        /><br />
+
+        <label id="number" for="number">Age</label><br />
+        <input
+          id="number"
+          type="number"
+          name="age"
+          placeholder="18"
+          required
+          min="2"
+          max="3"
+        /><br />
+        <label for="dropdown"
+          >Which Option best describes your current role?</label
+        ><br />
+        <select id="dropdown" name="role">
+          <option value="Student">Student</option>
+          <option value="Teacher">Teacher</option>
+          <option value="Other">Other</option>
+        </select>
+        <br />
+
+        <label for="dropdown">Would You recommend feeCodeCamp to a Fiend?</label
+        ><br />
+        <input type="radio" id="radio" name="definately" value="definately" />
+        <label>Definately</label><br />
+
+        <input type="radio" id="radio" name="maybe" value="maybe" />
+        <label>Maybe</label><br />
+
+        <input type="radio" id="radio" name="notsure" value="notsure" />
+        <label>Not Sure</label><br />
+        <label for="textarea">Enter comments:</label><br />
+
+        <textarea id="textarea" name="textarea" rows="4" cols="50"> </textarea>
+        <br />
+        <button id="submit" type="submit" value="Submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
